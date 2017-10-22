@@ -1,0 +1,62 @@
+{
+    "name": "Detail",
+    "base": "PersistedModel",
+    "idInjection": true,
+    "options": {
+        "validateUpsert": true
+    },
+    "properties": {
+        "workTitle": {
+            "type": "string"
+        },
+        "workAdress": {
+            "type": "string"
+        },
+        "workPhone": {
+            "type": "string"
+        },
+        "workMail": {
+            "type": "string"
+        },
+        "workProvience": {
+            "type": "string"
+        },
+        "wifeName": {
+            "type": "string"
+        },
+        "address": {
+            "type": "string"
+        },
+        "phone": {
+            "type": "string"
+        },
+        "email": {
+            "type": "string"
+        },
+        "provience": {
+            "type": "string"
+        },
+        "sellFlat": {
+            "type": "string"
+        },
+        "sellType": {
+            "type": "string"
+        },
+        "discount": {
+            "type": "number"
+        },
+        "payPlan": {
+            "type": "string"
+        }
+    },
+    "validations": [],
+    "relations": {
+        "customers": {
+            "type": "belongsTo",
+            "model": "Customers",
+            "foreignKey": ""
+        }
+    },
+    "acls": [],
+    "methods": {}
+}

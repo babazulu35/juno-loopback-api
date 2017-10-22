@@ -1,12 +1,12 @@
 {
-    "db": {
-        "host": "ds227035.mlab.com",
-        "port": 27035,
-        "url": "",
-        "database": "juno-mock",
-        "password": "junomock",
-        "name": "mongo",
-        "user": "junomock",
-        "connector": "mongodb"
-    }
+  "db": {
+    "host": "ds227035.mlab.com",
+    "port": 27035,
+    "url": "",
+    "database": "juno-mock",
+    "password": "junomock",
+    "name": "db",
+    "user": "junomock",
+    "connector": "mongodb"
+  }
 }

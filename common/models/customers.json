@@ -1,53 +1,58 @@
 {
-  "name": "Customers",
-  "base": "PersistedModel",
-  "idInjection": true,
-  "options": {
-    "validateUpsert": true
-  },
-  "properties": {
-    "Name": {
-      "type": "string"
+    "name": "Customers",
+    "base": "PersistedModel",
+    "idInjection": true,
+    "options": {
+        "validateUpsert": true
     },
-    "Surname": {
-      "type": "string"
+    "properties": {
+
+        "Name": {
+            "type": "string"
+        },
+        "Surname": {
+            "type": "string"
+        },
+        "PhoneNumber": {
+            "type": "string"
+        },
+        "Email": {
+            "type": "string"
+        },
+        "City": {
+            "type": "string"
+        },
+        "Status": {
+            "type": "number",
+            "default": 0
+        },
+        "Interests": {
+            "type": [
+                "string"
+            ]
+        },
+        "Reasons": {
+            "type": [
+                "string"
+            ]
+        },
+        "Source": {
+            "type": "string"
+        }
     },
-    "PhoneNumber": {
-      "type": "string"
+    "validations": [],
+    "relations": {
+        "details": {
+            "type": "hasOne",
+            "model": "Detail",
+            "foreignKey": ""
+        }
     },
-    "Email": {
-      "type": "string"
-    },
-    "City": {
-      "type": "string"
-    },
-    "Status": {
-      "type": "number",
-      "default": 0
-    },
-    "Interests": {
-      "type": [
-        "string"
-      ]
-    },
-    "Reasons": {
-      "type": [
-        "string"
-      ]
-    },
-    "Source": {
-      "type": "string"
-    }
-  },
-  "validations": [],
-  "relations": {},
-  "acls": [
-    {
-      "accessType": "*",
-      "principalType": "ROLE",
-      "principalId": "$unauthenticated",
-      "permission": "DENY"
-    }
-  ],
-  "methods": {}
+    "acls": [{
+        "accessType": "*",
+        "principalType": "ROLE",
+        "principalId": "$unauthenticated",
+        "permission": "DENY"
+    }],
+    "methods": {}
 }
