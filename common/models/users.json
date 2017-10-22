@@ -1,26 +1,24 @@
 {
-  "name": "Users",
-  "base": "User",
-  "idInjection": true,
-  "options": {
-    "validateUpsert": true
-  },
-  "properties": {
-    "role": {
-      "type": [
-        "number"
-      ]
-    }
-  },
-  "validations": [],
-  "relations": {},
-  "acls": [
-    {
-      "accessType": "*",
-      "principalType": "ROLE",
-      "principalId": "$unauthenticated",
-      "permission": "DENY"
-    }
-  ],
-  "methods": {}
+    "name": "Users",
+    "base": "User",
+    "idInjection": true,
+    "options": {
+        "validateUpsert": true
+    },
+    "properties": {
+        "role": {
+            "type": [
+                "number"
+            ]
+        }
+    },
+    "validations": [],
+    "relations": {},
+    "acls": [{
+        "accessType": "*",
+        "principalType": "ROLE",
+        "principalId": "$unauthenticated",
+        "permission": "DENY"
+    }],
+    "methods": {}
 }

@@ -6,7 +6,6 @@
         "validateUpsert": true
     },
     "properties": {
-
         "Name": {
             "type": "string"
         },
@@ -37,6 +36,9 @@
             ]
         },
         "Source": {
+            "type": "string"
+        },
+        "inRelationWith": {
             "type": "string"
         }
     },
